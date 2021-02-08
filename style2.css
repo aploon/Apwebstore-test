@@ -1,0 +1,106 @@
+@media screen and (min-width: 550px){
+    .article1,.article3{
+        display: flex;
+    }
+    .title4-4-cont{
+        display: block;
+    }
+    #section4{
+        background: none;
+        border-radius: 25px;
+        height: auto;
+    }
+    section .title4-1{
+        margin-top: 35px;
+    }
+    .title4-1-cont,.title4-2-cont,.title4-3-cont,.title4-4-cont{
+        background-color: white;
+        border-radius: 25px;
+        width: 225px;
+        padding: 15px 5px;
+        margin: 25px 15px 15px 15px;
+        transition: .3s;
+    }
+    .title4-1-cont:hover{
+        margin-top: 15px;
+        box-shadow: 5px 5px 15px;
+    }
+    .title4-2-cont:hover{
+        margin-top: 15px;
+        box-shadow: 5px 5px 15px;
+    }
+    .title4-3-cont:hover{
+        margin-top: 15px;
+        box-shadow: 5px 5px 15px;
+    }
+    .title4-4-cont:hover{
+        margin-top: 15px;
+        box-shadow: 5px 5px 15px;
+    }
+    section .title4-1,section .title4-2,section .title4-3,section .title4-4{
+        font-size: 17px;
+    } 
+    section .title4{
+        top: 0px;
+    }
+    section .title4-1+div,section .title4-2+div,section .title4-3+div,section .title4-4+div{
+        color: black;
+    }
+    .section4-f{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #section6{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    section .title6-1+div ul,section .title6-2+div ul,section .title6-3+div ul,section .title6-4+div ul,section .title6-5+div ul,section .title6-6+div ul{
+        margin-left: 0px;
+        font-size: 15px;
+    }
+    section .title6-1,section .title6-2,section .title6-3,section .title6-4,section .title6-5,section .title6-6{
+        font-size: 18px;
+    }
+    hr[color="#2A434E"]{
+        display: none;
+    }
+    .sidebarB{
+        font-size: 20px;
+    }
+    .sidebarB .ul{
+        margin-left: 75px;
+    }
+}
+@media screen and (min-width: 900px){
+    .hamburger{
+        display: none;
+    }
+    #contentH{
+        width: 500px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .formations{
+        cursor: pointer;
+    }
+    .formations:hover > .formationArrow{
+        display: inline-block;
+        transform: rotate(180deg);
+        transition: .3s;
+    }
+    .formations:hover > #contentS{
+        display: block;
+        top: 40px;
+        transition: .5s;
+    }
+}
+@media screen and (max-width: 900px){
+    #contentH{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+}

@@ -1,0 +1,176 @@
+
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1">   <meta name="csrf-token" content="AZslvXHgqyruiAnuEL0U1MyyVLXAQLqAjCYIEf7c"> <title>JavaScript Reduce: Example of Flattening Arrays</title> <meta name="description" content="In this JavaScript reduce example, we use this function to show the flattening of arrays. We turn a multidimensional array into one dimensional array."> <meta name="keywords" content="javascript reduce">  <link href="/learn/assets/css/code-editor.css?id=4b72389ae506048ad7f9" rel="stylesheet">  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800%7CRoboto+Mono:400,500,700%7CWork+Sans:300,400,500,600,700,800,900&amp;subset=latin-ext" rel="stylesheet"> <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css"> <link rel="dns-prefetch" href="https://fonts.googleapis.com"> <link rel="dns-prefetch" href="https://ajax.googleapis.com"> <link rel="dns-prefetch" href="https://use.fontawesome.com"> <link rel="dns-prefetch" href="https://www.google-analytics.com"> <link rel="dns-prefetch" href="https://www.googletagmanager.com"> <link rel="dns-prefetch" href="https://cdn.jsdelivr.net"> <link rel="dns-prefetch" href="https://in.hotjar.com"> <link rel="dns-prefetch" href="https://vc.hotjar.io"> <link rel="dns-prefetch" href="https://fonts.gstatic.com"> <meta property="og:url" content="https://www.bitdegree.org/learn/best-code-editor/javascript-reduce-example-3" /> <meta property="og:type" content="website" /> <meta property="og:image" content="https://www.bitdegree.org/learn/assets/app-icons/bdg-learn.jpg" /> <meta property="og:title" content="JavaScript Reduce: Example of Flattening Arrays" /> <meta property="og:description" content="In this JavaScript reduce example, we use this function to show the flattening of arrays. We turn a multidimensional array into one dimensional array." /> <meta property="fb:app_id" content="278971585970094" /> <meta name="twitter:card" content="summary_large_image"> <meta name="twitter:description" content="In this JavaScript reduce example, we use this function to show the flattening of arrays. We turn a multidimensional array into one dimensional array."> <meta name="twitter:title" content="JavaScript Reduce: Example of Flattening Arrays"> <meta name="twitter:image" content="https://www.bitdegree.org/learn/assets/app-icons/bdg-learn.jpg">   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TVTFGQB');</script>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Organization","name":"BitDegree","legalName":"BitDegree Online Courses","foundingDate":"2017","logo":"https:\/\/www.bitdegree.org\/learn\/assets\/bdg_logo_h60.png","image":"https:\/\/www.bitdegree.org\/learn\/assets\/bdg_logo_h60.png","url":"https:\/\/www.bitdegree.org","sameAs":[null,null,null,null,"https:\/\/blog.bitdegree.org\/",null,null,null],"address":{"@type":"PostalAddress","telephone":"+37061780199","streetAddress":"Veiveri\u0173 g. 139","addressLocality":"Kaunas","postalCode":"LT-46389","addressCountry":{"@type":"Country","name":"LTU"}},"contactPoint":{"@type":"ContactPoint","contactType":"customer support","email":"mailto:hello@bitdegree.org","url":"https:\/\/www.bitdegree.org"}}</script> <script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"WebSite","name":"BitDegree","image":"https:\/\/www.bitdegree.org\/learn\/assets\/bdg_logo_h60.png","url":"https:\/\/www.bitdegree.org\/learn\/","potentialAction":{"@type":"SearchAction","target":"https:\/\/www.bitdegree.org\/learn\/search?query={search_term_string}","query-input":"required name=search_term_string"}}</script>   <link rel="canonical" href="https://www.bitdegree.org/learn/best-code-editor/javascript-reduce-example-3"> </head> <body class="page-editor canvas">  <div id="app-platform">           <div>
+    <code-editor-view
+        language="html"
+        value="&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;scripts.js&quot;&gt;
+&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;h2&gt;JavaScript reduce()&lt;/h2&gt;
+
+&lt;p&gt;Click the button!&lt;/p&gt;
+
+&lt;button onclick=&quot;myFunction()&quot;&gt;Try it&lt;/button&gt;
+
+&lt;p id=&quot;test&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+var myArray = [[5, 7], [2, 5, 6], [9, 5, 3, 7]];
+document.getElementById(&quot;test&quot;).innerHTML = myArray.map(e =&gt; e).join(&quot;; &quot;);
+function myFunction() {
+var myNewArray = myArray.reduce(function (prev, curr) {
+  return prev.concat(curr);
+});
+document.getElementById(&quot;test&quot;).innerHTML = myNewArray.map(e =&gt; e).join(&quot;; &quot;);
+}
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;"
+        :required-editors="3"
+        :play-ground="false"
+        :play-ground-title="null"
+        slug="javascript-reduce-example-3"
+        :play-ground-id="0"
+        :is-code-owner="false"
+        :is-bdg-user="false"
+    ></code-editor-view>
+</div>
+
+     <div class="related-examples-container">
+    <div class="related-examples related-examples-collapse pl-3 pr-5 py-2 d-flex align-items-center">
+        <h5 class="text-white mr-3 mb-0" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Related Material in: </h5> <i class="fas fa-angle-down" data-toggle="collapse" data-target="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"></i>
+        <div class="example-category-tabs">
+            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                        <li class="nav-item">
+                        <a class="nav-link  active " id="tab-JavaScript" data-toggle="pill" href="#pill-JavaScript" role="tab" aria-controls="pill-JavaScript" aria-selected="true">
+                                                                <img src="https://www.bitdegree.org/learn/storage/media/images/0179bd53-228d-43e8-9aa9-b89b29bd3a65.svg" alt="JavaScript">
+                                                            <span>JavaScript</span>
+                        </a>
+                    </li>
+                                    <li>
+                    <a id="find-more-btn"><i class="fas fa-search"></i> <span>Find more</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+     <div class="collapse p-3" id="collapseExample">
+        <div class="example-tab-content tab-content" id="pills-tabContent">
+                            <div class="tab-pane   show active " id="pill-JavaScript" role="tabpanel" aria-labelledby="pill-JavaScript">
+                <div class="row">
+                                            <div class="col-md-8">
+                        <div class="row">
+                                                                                                        <div class="col-md-4 example-card-block mb-4 mb-md-0">
+                                        <div class="example-image__container">
+                                            <a href="https://www.bitdegree.org/learn/best-code-editor/javascript-reduce-example-1">
+                                                                                                        <div class="example-image" style="background-color: #efc100">
+                                                        <h4>JavaScript</h4>
+                                                    </div>
+                                                                                                </a>
+                                        </div>
+                                        <div class="example-footer">
+                                            <a class="d-flex align-items-start justify-content-sm-between" href="https://www.bitdegree.org/learn/best-code-editor/javascript-reduce-example-1">
+                                                <div class="example-info text-truncate">
+                                                    <div class="example-title">
+                                                        Using JavaScript reduce()
+                                                    </div>
+                                                </div>
+                                                <i class="fas fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                                                                                                                            <div class="col-md-4 example-card-block mb-4 mb-md-0">
+                                        <div class="example-image__container">
+                                            <a href="https://www.bitdegree.org/learn/best-code-editor/javascript-reduce-example-2">
+                                                                                                        <div class="example-image" style="background-color: #efc100">
+                                                        <h4>JavaScript</h4>
+                                                    </div>
+                                                                                                </a>
+                                        </div>
+                                        <div class="example-footer">
+                                            <a class="d-flex align-items-start justify-content-sm-between" href="https://www.bitdegree.org/learn/best-code-editor/javascript-reduce-example-2">
+                                                <div class="example-info text-truncate">
+                                                    <div class="example-title">
+                                                        Setting Accumulator in JavaScript Reduce
+                                                    </div>
+                                                </div>
+                                                <i class="fas fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                                                                                                                                                </div>
+                    </div>
+                                            <div class="col-md-4 related-posts pt-4 pt-md-0">
+                                                                                                                                                                                                                    <h5>Example has been featured in these posts:</h5>
+                                                                                                                    <div class="related-posts-post mb-3">
+                                            <a  href="https://www.bitdegree.org/learn/javascript-reduce">
+                                                <h6 class="text-white">The Basics of Applying JavaScript Reduce on Arrays</h6>
+                                                <div class="post-details">
+                                                    <div class="post-details-read-time">3 min read</div>
+                                                                                                                <div class="post-details-example-amount">3 examples</div>
+                                                                                                        </div>
+                                            </a>
+                                        </div>
+                                                                                                                                                            </div>
+                </div>
+            </div>
+                        </div>
+    </div>
+</div>
+       <cookie-bar /> </div> <script>
+window.addEventListener('DOMContentLoaded', function(event) {
+    var scroll_lastPosition = 0;
+    var scroll_minimalDelta = 5;
+
+    window.onscroll = function() {
+        var dom_header = document.querySelector('header');
+        var navbar_height = 0;
+        if (dom_header !== null && dom_header !== undefined) {
+            navbar_height = dom_header.offsetHeight;
+        }
+
+        var scroll_currentPosition = window.pageYOffset || document.body.scrollTop;
+
+        if (dom_header instanceof Element || dom_header instanceof HTMLDocument) {
+            if (Math.abs(scroll_lastPosition - scroll_currentPosition) > scroll_minimalDelta) {
+                if (scroll_currentPosition > navbar_height) {
+                    dom_header.classList.remove('nav-up');
+                    dom_header.classList.add('nav-down');
+                } else {
+                    dom_header.classList.remove('nav-down');
+                    dom_header.classList.add('nav-up');
+                }
+                scroll_lastPosition = scroll_currentPosition;
+            }
+        }
+    };
+});
+</script>
+<script src="/learn/assets/js/manifest.js?id=c96329c79da7a4ab2db2"></script>
+<script src="/learn/assets/js/vendor.js?id=5694026c3e1c1a71ea97"></script>
+<script src="/learn/assets/js/platform.js?id=fa747674685e00b6d3b6"></script>
+<script defer src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ouibounce/0.0.11/ouibounce.min.js"></script>
+
+<script  async  src="/learn/assets/js/interactive-sql.js?id=7ce6f6c33529a9703e33"></script>
+<script>
+window.lazyLoadOptions = {
+    elements_selector: ['img', '.lazyBg'],
+};
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
+<script src="/learn/assets/js/code-editor.js?id=f781e7d269eba1d5aed9"></script>
+ </body> </html>

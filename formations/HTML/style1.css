@@ -1,0 +1,126 @@
+p{
+    font-family: Georgia!important;
+    font-size: 16px!important;
+    padding: 0px 15px!important;
+    line-height: 30px!important;
+    font-weight: 200!important;
+}
+.parag{
+    font-size: 17px;
+    line-height: 30px;
+    font-family: Georgia;
+  }
+header span{
+    line-height: 25px!important;
+}
+
+p span{
+    background-color: white!important;
+    box-shadow: 0px 0px 5px black!important;
+    border-radius: 6px!important;
+    padding: 1px!important;
+}
+.imgT{
+    width: 325px!important;
+    height: 225px!important;
+    display: block!important;
+    margin: auto!important;
+    box-shadow: 0px 0px 5px!important;
+}
+.imgTcode{
+    display: block!important;
+    margin: auto!important;
+    box-shadow: 0px 0px 5px!important;
+}
+p b{
+    font-size: 17px!important;
+}
+p span{
+    background-color: white!important;
+    box-shadow: 0px 0px 5px black!important;
+    border-radius: 6px!important;
+    padding: 1px!important;
+}
+.imgNote{
+    width: 50px!important;
+    height: 35px!important;
+    margin-top: 5px!important;
+}
+.spanNote{
+    background-color: rgb(230, 230, 230)!important;
+    color: rgb(138, 138, 138)!important;
+    font-size: 16px!important;
+    box-shadow: 0px 0px 0px!important;
+}
+.codeLang{
+    background-color:rgba(4, 0, 255, 0.712)!important;
+    color: rgb(235, 235, 235)!important;
+    border-radius: 5px 5px 0px 0px!important;
+    box-shadow: 0px 0px 0px!important;
+    padding: 1px!important;
+    position: relative!important;
+    top: 4px!important;
+}
+
+.bal{
+    color: rgb(4, 0, 255)!important;
+    font-weight: 300!important;
+    font-family: sans-serif!important;
+}
+.att{
+    color: rgb(199, 129, 0)!important;
+    font-family: sans-serif!important;
+    font-weight: 300!important;
+}
+.val{
+    color: rgb(122, 14, 0)!important;
+    font-family: sans-serif!important;
+    font-weight: 300!important;
+}
+code{
+    display: block!important;
+    color: black!important;
+    padding: 5px!important;
+    font-family: sans-serif!important;
+    font-weight: 300!important;
+    background-color:  /*rgb(0, 9, 37)*/rgb(245, 245, 245)!important;
+    box-shadow: 0px 0px 1px!important;
+    border-radius: 0px 5px 5px 5px!important;
+}
+.courses{
+    text-decoration: none;
+    color: #00a0eb;
+    font-size: larger;
+    font-weight: bold;
+}
+.coursesAfter{
+    background-color: #00a0eb;
+    margin-top: 3px;
+    position: relative;
+    top: 25px;
+    width: 0px;
+    opacity: 0;
+    height: 5px;
+    border-radius: 0px 0px 3px 3px;
+    transition: .5s;
+}
+.courses:hover + .coursesAfter{
+    width: 70px;
+    top: 0px;
+    opacity: 1;
+}
+.ads{
+    position: fixed;
+    top: 85px;
+    right: 2px;
+    width: 225px;
+}
+
+@media screen and (max-width: 900px){
+    .courses{
+        display: none;
+    }
+    .ads{
+        display: none;
+    }
+}

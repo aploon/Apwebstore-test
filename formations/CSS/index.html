@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.79.0">
+    <title>Courses CSS3</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cheatsheet/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
+
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+	  <link href="style1.css" rel="stylesheet">
+	  <link href="main.css" rel="stylesheet">
+	  <link href="main.scss" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    
+<header class="bd-header bg-dark py-3 d-flex align-items-stretch border-bottom border-dark">
+  <div class="container-fluid d-flex align-items-center">
+    <h1 class="d-flex align-items-center fs-4 text-white mb-0">
+      <img src="images/SVG/css3.svg" alt="html" style="width: 45px; height: 50px;">
+        CSS3
+  </h1>
+  <div class="container" style="margin-right: 25px;">
+		<div class="searchbox ms-auto link-light">
+			<input type="text" class="searchbox__input" placeholder="Search..." />
+			<svg class="searchbox__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.966 56.966">
+				<path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17s-17-7.626-17-17S14.61,6,23.984,6z" />
+			</svg>
+		</div>
+	</div>
+    <div class="d-flex-row">
+      <a href="examples/cheatsheet-rtl/" class="courses ms-auto link-light" hreflang="ar">Courses</a>
+      <div class="coursesAfter"></div>
+    </div>
+  </div>
+</header>
+<!-- PUB -->
+<section class="ads">
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <img src="images/livre.jpg" alt="" style="width: 150px; height: 200px; box-shadow: 0.5px 0.5px 10px black;"><br>
+    <a href="https://www.amazon.fr/HTML5-CSS3-Ma%C3%AEtrisez-standards-creation/dp/2409003346
+    " style="text-decoration: none; font-weight: 500;"> <br> Amazon.fr-HTML5 ET CSS3</a> <br>
+    <strong>HTML5 ET CSS3</strong> Matrisez les standards de la création de sites web (Edition 3).
+    <div>Par <b>Christophe AUBRY</b> <br> <b>Luc VAN LANCKER</b></div>
+  </div>
+</section>
+<div class="bd-cheatsheet container-fluid bg-white">
+  
+  <section id="General">
+    <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">GENERALITE</h2>
+    <article class="my-3" id="html">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>CSS3</h3>
+        <a class="d-flex align-items-center" href="content/typography/">Documentation</a>
+      </div>
+      <div class="parag">
+      <p>
+        CSS (Cascading Style Sheets ou feuilles de style en cascade) est un langage qui permet
+        d'attacher des styles de présentation à des documents structurés écrits en (X)HTML ou en XML.
+        Il permet de prendre en charge la mise en page, les couleurs, la typographie, les élements décoratifs.
+        En séparant le contenu et la mise en forme, l'utilisation de CSS facilite grandement la création de pages web et la maintenance des sites.
+        Le langage CSS est le compagnon quasi-indispensable des documents (X)HTML écrits en DTD Strict.
+        Les propriétés CSS sont en grande partie bien supportées par la plupart des navigateurs actuels. 
+        Néanmoins l'utilisation de certaines propriétés peut poser problème sur certains navigateurs,
+        notamment Internet Explorer 6. De plus certaines propriétés ne sont gérées par quasiment aucun navigateur. 
+        C'est pourquoi un travail de vérification sous des environnements différents est bien 
+        souvent nécessaire lors de l'utilisation de styles CSS.
+      </p>
+      </div>
+    </article>
+    <article class="my-3" id="hist">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>HISTORIQUE</h3>
+        <a class="d-flex align-items-center" href="content/typography/">Documentation</a>
+      </div>
+      <div class="parag">
+      <p>
+        Le CSS (Cascading Style Sheets : feuilles de style en cascade) est un langage informatique
+        qui permet la mise en forme d'une page web. Créé par la W3C dans les années 1990 , 
+        il est totalement pris en charge par les navigateurs dans les annés 2000. La première 
+        réelle proposition de feuilles de style est proposée par Hakon Wium Lie. Très vite, 
+        Dave Raggett qui est alors le principal éditeur du projet de spécification HTML3 
+        publie un document évoquant le travail de Hakon Wium Lie. La spécification CSS1 
+        finale est publiée le 17 décembre 1996. La première version du CSS ne permet pas 
+        une mise en page mais seulement une "mise en style" ( police,couleur, caractère...).
+        En 1997, l'etude du CSS est confiée à une équipe du W3C presidé par Chris Lilley. 
+        Ce groupe contient des representants des plus grands navigateurs.
+        C'est en mai 1998 que la seconde version du CSS, avec ses 70 nouvelles propriétés, 
+        apparaît. Des problèmes d'implémentation du CSS conduise le W3C à sortir en 2001
+         une version revue du CSS2. Le développement du CSS3 débute dès 1999. Cependant 
+         le développement est très difficile avec les problèmes de mise à jour et d'implémentation. 
+         L'évolution du CSS est constante et il a fallu plus de 10 années pour finaliser sa version 3.
+      </p>
+      </div>
+    </article>
+  </section>
+
+  <section id="basics">
+    <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">BASICS CSS3</h2>
+
+    <article class="my-3" id="firstCss">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>VOTRE PREMIER CSS</h3>
+        <a class="d-flex align-items-center" href="content/typography/">Documentation</a>
+      </div>
+      <div class="parag">
+        <p>
+          Le CSS est une feuille de style qui permet d'appliquer des style a notre page web.
+          Il controle l'aspect et la convivialité des documents web. <br>
+          De la même façon que HTML, CSS n'est pas vraiment un langage de programmation. 
+          C'est un langage de feuille de style, c'est-à-dire qu'il permet d'appliquer 
+          des styles sur différents éléments sélectionnés dans un document HTML. 
+          Par exemple, on peut sélectionner tous les éléments d'une page HTML qui sont 
+          paragraphes et afficher leurs textes en rouge avec ce code CSS : <br>
+          <span class="codeLang">CSS</span>
+          <code>
+            <b class="bal"> p </b> {<br> 
+            <b class="att" style="margin-left: 25px;">color</b>: <b class="val">red</b>; <br>
+            }
+          </code>
+          Faisons un essai : copiez ces trois lignes de code CSS dans un nouveau 
+          fichier dans votre éditeur de texte, puis sauvegardez le fichier sous 
+          le nom style.css dans votre répertoire styles.
+          Pour que cela fonctionne, il faut appliquer le CSS au document HTML, 
+          sinon la mise en forme décrite dans le fichier CSS n'affectera pas 
+          l'affichage de la page HTML dans la navigateur 
+          (si vous n'avez pas suivi toutes les étapes pour arriver ici, 
+          vous pouvez lire l'article Gérer les fichiers et Les bases du HTML <br>
+          pour savoir par où commencer). <br><br>
+
+          <strong style="font-size: x-large;">1. </strong> Ouvrez votre fichier 
+          <span>index.html</span> et copiez la ligne suivante 
+          quelque part au sein de l'élément <span>head</span> 
+          (c'est-à-dire entre les balises <span><b class="bal">&lt;head&gt;</b></span> et 
+          <span><b class="bal">&lt;/head&gt;</b></span>
+
+          <code>
+              <b class="bal">&lt;link <b class="att">href</b>="<b class="val">styles/style.css</b>"
+              <b class="att">rel</b>="<b class="val">stylesheet</b>"
+              <b class="att">type</b>="<b class="val">text/css</b>"
+              &gt;</b><br>
+          </code>
+          <span>Exemple:</span> <br>
+
+          <span class="codeLang">HTML</span>
+          <code>
+            <b class="bal">&lt;!DOCTYPE html&gt;</b><br>
+            <b class="bal">&lt;html <b class="att">lang</b>="<b class="val">en</b>"&gt;</b><br>
+            <b class="bal" style="margin-left: 25px;">&lt;head&gt;</b><br>
+            <b class="bal" style="margin-left: 50px;">&lt;meta <b class="att">charset</b>="<b class="val">UTF-8</b>"&gt;</b><br>
+            <b class="bal" style="margin-left: 50px;">&lt;link <b class="att">href</b>="<b class="val">styles/style.css</b>"
+              <b class="att">rel</b>="<b class="val">stylesheet</b>"
+              <b class="att">type</b>="<b class="val">text/css</b>"
+              &gt;</b><br>
+            <b class="bal" style="margin-left: 50px;">&lt;title&gt;</b>Coding<b class="bal">&lt;/title&gt;</b><br>
+            <b class="bal" style="margin-left: 25px;">&lt;/head&gt;</b><br>
+            <b class="bal" style="margin-left: 25px;">&lt;body&gt;</b> <br>
+              <b class="bal" style="margin-left: 25px;">&lt;p&gt;</b>
+                Ceci est un paragraphe
+              <b class="bal">&lt;/p&gt;</b><br>
+            <b class="bal" style="margin-left: 25px;">&lt;/body&gt;</b><br>
+            <b class="bal">&lt;/html&gt;</b><br>
+          </code>
+
+          <strong style="font-size: x-large;">2. </strong>Sauvegardez <span>index.html</span> puis 
+          chargez-le dans votre navigateur.
+          Vous devriez obtenir quelque chose comme ceci: <br>
+          <span style="color: #008aca;">Chrome navigator</span> <br><br>
+          <img src="images/redParag.png" alt="" class="imgT">
+        </p>
+      </div> 
+    </article>
+
+    <article class="my-3" id="CSSrulers">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>TYPE DE CSS</h3>
+        <a class="d-flex align-items-center" href="content/typography/">Documentation</a>
+      </div>
+      <div class="parag">
+        Nous pouvons relier notre fichier style.css de trois manière différentes au fichier index.html
+        <p>
+          <br><u>UTILISATION DE STYLE EN LIGNE</u><br>
+          L'utilisation d'un style en ligne est l'un des moyens d'insérer une feuille de style.
+          Avec un style en ligne, un style unique est appliqué à un seul élément. Afin d'utiliser un style en ligne,
+          ajoutez l'attribut <span>style</span> a la balise correspondante.L'exemple ci-dessous montre comment créer
+          un paragraphe avec un fond gris et un text blanc. <br>
+          <span class="codeLang">HTML</span>
+          <code>
+              <b class="bal">&lt;p <b class="att">style</b>="<b class="val">color: white; background-color: gray;</b>"&gt;</b> This is an example of inline styling.
+              <b class="bal">&lt;/p&gt;</b>
+          </code> <br>
+          <img src="" alt="" class="imgT">
+
+          <br><u>UTILISATION DE STYLE DANS LE HEAD</u><br>
+          Les styles internes sont définis dans la balise <span>style</span>
+          à l'intéieur de la balise <span>head</span>  <br>
+          Par exemple le code suivant applique du style sur tout les paragraphes<br>
+          <span class="codeLang">HTML</span>
+          <code>
+              <b class="bal">&lt;!DOCTYPE html&gt;</b><br>
+              <b class="bal">&lt;html <b class="att">lang</b>="<b class="val">en</b>"&gt;</b><br>
+              <b class="bal" style="margin-left: 25px;">&lt;head&gt;</b><br>
+              <b class="bal" style="margin-left: 50px;">&lt;meta <b class="att">charset</b>="<b class="val">UTF-8</b>"&gt;</b><br>
+              <b class="bal" style="margin-left: 50px;">&lt;title&gt;</b>Coding<b class="bal">&lt;/title&gt;</b><br>
+              <b class="bal" style="margin-left: 50px;">&lt;style&gt;</b> <br>
+              <b class="bal" style="margin-left: 50px;"> p </b> {<br> 
+              <b class="att" style="margin-left: 75px;">color</b>: <b class="val">red</b>; <br>
+              <b class="att" style="margin-left: 75px;">font-size</b>: <b class="val">20px</b>; <br>
+              <b class="att" style="margin-left: 75px;">background-color</b>: <b class="val">blue</b>; <br>
+              <b style="margin-left: 50px;">}</b> <br>
+              <b class="bal" style="margin-left: 50px;">&lt;/style&gt;</b><br>
+              <b class="bal" style="margin-left: 25px;">&lt;/head&gt;</b><br>
+              <b class="bal" style="margin-left: 25px;">&lt;body&gt;</b><b class="bal">&lt;/body&gt;</b><br>
+              <b class="bal">&lt;/html&gt;</b><br>
+          </code>  
+          <img src="" alt="" class="imgT">
+
+          <br><b><u>UTILISATION DE LIEN EXTERNE</u></b><br>
+          Avec cette méthode, toutes les règles de style sont contenues dans un seul fichier texte, qui est enregistré avec l'extension <span>.css</span>.
+          Ce fichier CSS est ensuite référencé dans le HTML à l'aide de la balise <b class="bal">&lt;link&gt;</b>. L'élément <b class="bal">&lt;link&gt;</b>
+          va dans la section head. <br>
+          Nous avons donné l'exemple de ce cas au début de ce cour.
+
+        </p>
+      </div>
+
+    </article>
+
+    <article class="my-3" id="CSSrulers">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>ANATOMIE DU CSS</h3>
+        <a class="d-flex align-items-center" href="content/typography/">Documentation</a>
+      </div>
+      <div class="parag">
+        Regardons un peu plus en détails ce que nous avons écrit en CSS :
+        <p>
+          <img src="images/SVG/anatomieCss.svg" alt=""><br>
+          <br><b><u>SELECTEUR</u></b><br>
+          C'est le nom de l'élément HTML situé au début de l'ensemble de règles. Il permet de sélectionner les éléments sur lesquels appliquer le style souhaité (en l'occurence, les éléments p). Pour mettre en forme un élément différent, il suffit de changer le sélecteur.
+          <br><b><u>DECLARATION</u></b><br>
+          C'est une règle simple comme color: red; qui détermine les propriétés de l'élément que l'on veut mettre en forme.
+          <br><b><u>PROPRIETES</u></b><br>
+          Les différentes façons dont on peut mettre en forme un élément HTML (dans ce cas, color est une propriété des éléments p). En CSS, vous choisissez les différentes propriétés que vous voulez utiliser dans une règle CSS.
+          <br><b><u>VALEUR DE LA PROPRIETE</u></b><br>
+          À droite de la propriété, après les deux points, on a la valeur de la propriété. Celle-ci permet de choisir une mise en forme parmi d'autres pour une propriété donnée (par exemple, il y a d'autres couleurs que red pour la propriété color).
+          Les autres éléments importants de la syntaxe sont :
+
+          chaque ensemble de règles, à l'exception du sélecteur, doit être entre accolades ({}).
+          pour chaque déclaration, il faut utiliser deux points (:) pour séparer la propriété de ses valeurs.
+          pour chaque ensemble de règles, il faut utiliser un point-virgule (;) pour séparer les déclarations entre elles. <br>
+          Ainsi, si on veut modifier plusieurs propriétés d'un coup, on peut utiliser plusieurs déclarations dans une seule règle en les séparant par des points-virgules : <br>
+          <span class="codeLang">CSS</span>
+          <code>
+            <b class="bal"> p </b> {<br> 
+            <b class="att" style="margin-left: 25px;">color</b>: <b class="val">red</b>; <br>
+            <b class="att" style="margin-left: 25px;">font-size</b>: <b class="val">20px</b>; <br>
+            <b class="att" style="margin-left: 25px;">background-color</b>: <b class="val">blue</b>; <br>
+            }
+          </code>
+
+        </p>
+      </div>
+
+    </article>
+    <article class="my-3" id="struct">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>SELECTION D'ELEMENTS</h3>
+        <a class="d-flex align-items-center" href="content/typography/">Documentation</a>
+      </div>
+      <div class="parag">
+        Il est aussi possible de sélectionner plusieurs types d'éléments pour leurs appliquer les memes propriétés. 
+        <p>
+          <u>SELECTION MULTIPLE</u><br>
+          Pour appliquer une sélection multiple, Il suffit de placer plusieurs sélecteurs, séparés par des virgules. Par exemple : <br>
+          <span class="codeLang">CSS</span>
+          <code>
+            <b class="bal"> p,h1,div </b> {<br> 
+            <b class="att" style="margin-left: 75px;">color</b>: <b class="val">red</b>; <br>
+            <b class="att" style="margin-left: 75px;">font-size</b>: <b class="val">20px</b>; <br>
+            <b class="att" style="margin-left: 75px;">background-color</b>: <b class="val">blue</b>; <br>
+            }
+          </code>
+          <img src="images/SVG/note.svg" alt="" class="imgNote">
+          <span class="spanNote">
+              <u>INTEPRETATION:</u>
+              les élements contenu dans les balises <span>p</span>, 
+              <span>h1</span>, <span>div</span> auront une couleur rouge, 
+              une taille de 20px et un font en bleu. comme suit:
+          </span><br> 
+          <img src="images/selecteur1.png" alt="" class="imgT">
+          <u><b>LES DIFFERENTS SELECTEUR</b></u><br>
+          Il y a différents types de sélecteurs. Dans les exemples précédents, 
+          nous n'avons vu que les sélecteurs d'élément qui permettent de sélectionner 
+          les éléments HTML d'un type donné dans un document HTML. 
+          Mais ce n'est pas tout, il est possible de faire des sélections plus spécifiques. 
+          Voici quelques-uns des types de sélecteur les plus fréquents :
+          <table class="standard-table">
+            <thead>
+             <tr>
+              <th scope="col">Nom du sélecteur</th>
+              <th scope="col">Ce qu'il sélectionne</th>
+              <th scope="col">Exemple</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+              <td>Sélecteur d'élément (parfois appelé « sélecteur de balise » ou « sélecteur de type »)</td>
+              <td>Tous les éléments HTML d'un type donné.</td>
+              <td><code>p</code><br>
+               sélectionne tous les <code>&lt;p&gt;</code></td>
+             </tr>
+             <tr>
+              <td>Sélecteur d'ID</td>
+              <td>L'élément d'une page qui possède l'ID fourni (pour une page HTML donné, on ne peut avoir qu'un seul élément pour un ID donné).</td>
+              <td><code>#my-id</code><br>
+               sélectionne <code>&lt;p id="my-id"&gt;</code> ou <code>&lt;a id="my-id"&gt;</code></td>
+             </tr>
+             <tr>
+              <td>Sélecteur de classe</td>
+              <td>Les éléments d'une page qui sont de la classe donnée (pour une page donnée, il est possible d'avoir plusieurs éléments qui partagent une même classe).</td>
+              <td><code>.my-class</code><br>
+               sélectionne <code>&lt;p class="my-class"&gt;</code> et <code>&lt;a class="my-class!"&gt;</code></td>
+             </tr>
+             <tr>
+              <td>Sélecteur d'attribut</td>
+              <td>Les éléments de la page qui possèdent l'attribut donné.</td>
+              <td><code>img[src]</code><br>
+               sélectionne <code>&lt;img src="monimage.png"&gt;</code> mais pas <code>&lt;img&gt;</code></td>
+             </tr>
+             <tr>
+              <td>Sélecteur de pseudo-classe</td>
+              <td>Les éléments donnés mais uniquement dans un certain état (par exemple quand on passe la souris dessus).</td>
+              <td><code>a:hover</code><br>
+               sélectionne <code>&lt;a&gt;</code> mais uniquement quand le pointeur de la souris est au-dessus du lien.</td>
+             </tr>
+            </tbody>
+           </table>
+           <div style="text-align: right;">Il existe encore une multitude de selecteurs. <a href="">En savoir plus</a></div>
+        </p>
+      </div>
+    </article>
+  </section>
+
+  <section id="formatText">
+    <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">FORMATAGE</h2>
+
+    <article class="my-3" id="fontFamily">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Les Polices de Textes</h3>
+        <a class="d-flex align-items-center" href="content/typography/">Documentation</a>
+      </div>
+      <div class="parag">
+        Le texte brute écrit en html peut-etre complétement modifier à l'aide du css
+        ajouter à ce dernier. Ainsi le css peut modifier soit, la Police d'un text ( <span>font-family</span> ),
+        la Taille de la Police d'un text ( <span>font-size</span> ), l'Alignement d'un text... et bien d'autres choses.
+        <p>
+          <br><u>LE FONT-FAMILY</u><br>
+          La propriété <span style="color: #008aca;">Font-Family</span> spécifie la police d'un élément. Il existe deux types de noms de Familles de Polices.
+          <ul style="margin: 0;">
+            <li><u>font family</u>  : qui spécifie une famille de polices comme </li>
+            <span>Times New Roman</span> ou <span>Arial</span>.
+            <li><u>generic family</u> : un groupe de polices avec un look similaire comme</li>
+            <span>Serif</span> ou <span>Monospace</span>.
+          </ul>
+          Voici un exemple de styles de police différents²
+          <table class="standard-table">
+            <thead>
+             <tr>
+              <th scope="col">Generic Family</th>
+              <th scope="col">Font Family</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+                <td style="font-family: serif;">Serif</td>
+                <td>
+                  <div style="font-family: 'Times New Roman';">Times New Roman</div>
+                  <div style="font-family: Georgia;">Georgia</div>
+                </td>
+             </tr>
+             <tr>
+                <td style="font-family: sans-serif;">Sans-serif</td>
+                <td>
+                  <div style="font-family: Arial;">Arial</div>
+                  <div style="font-family: Verdana;">Verdana</div>
+                </td>
+             </tr>
+             <tr>
+                <td style="font-family: monospace;">Serif</td>
+                <td>
+                  <div style="font-family: 'Courier New';">Times New Roman</div>
+                  <div style="font-family: 'Lucida Sans';">Georgia</div>
+                </td>
+             </tr>
+            </tbody>
+           </table>
+          <span class="codeLang">HTML</span>
+          <code>
+              <b class="bal">&lt;p <b class="att">class</b>="<b class="val">serif</b>"&gt;</b><br>
+               This is a paragraph shown in serif font. <br>
+              <b class="bal">&lt;/p&gt;</b> <br>
+              <b class="bal">&lt;p <b class="att">class</b>="<b class="val">sans-serif</b>"&gt;</b><br>
+               This is a paragraph shown in sans-serif font. <br>
+              <b class="bal">&lt;/p&gt;</b> <br>
+              <b class="bal">&lt;p <b class="att">class</b>="<b class="val">monospace</b>"&gt;</b><br>
+               This is a paragraph shown in monospace font. <br>
+              <b class="bal">&lt;/p&gt;</b> <br>
+              <b class="bal">&lt;p <b class="att">class</b>="<b class="val">cursive</b>"&gt;</b><br>
+               This is a paragraph shown in cursive font. <br>
+              <b class="bal">&lt;/p&gt;</b> <br>
+              <b class="bal">&lt;p <b class="att">class</b>="<b class="val">fantasy</b>"&gt;</b><br>
+               This is a paragraph shown in fantasy font. <br>
+              <b class="bal">&lt;/p&gt;</b>
+          </code> <br>
+          <span class="codeLang">CSS</span>
+          <code>
+            <b class="bal"> p.serif </b> {<br> 
+            <b class="att" style="margin-left: 50px;">font-family</b>: <b class="val">"Times New Roman", Times, serif</b>; <br>
+            } <br>
+            <b class="bal"> p.sans-serif </b> {<br> 
+            <b class="att" style="margin-left: 50px;">font-family</b>: <b class="val">Helvetica, Arial, sans-serif</b>; <br>
+            } <br>
+            <b class="bal"> p.monospace </b> {<br> 
+            <b class="att" style="margin-left: 50px;">font-family</b>: <b class="val">"Couriel New", Courier, monospace</b>; <br>
+            } <br>
+            <b class="bal"> p.cursive </b> {<br> 
+            <b class="att" style="margin-left: 50px;">font-family</b>: <b class="val">Florence, cursive</b>; <br>
+            } <br>
+            <b class="bal"> p.fantasy </b> {<br> 
+            <b class="att" style="margin-left: 50px;">font-family</b>: <b class="val">Blippo, Fantasy</b>; <br>
+            }
+          </code><br>
+          <img src="" alt="" class="imgT">
+
+          <br><u>LE FONT-SIZE</u><br>
+          La propriété <span style="color: #008aca;">font-size</span> définit la taille d'une police. <br>
+          Une facon de définir la taille des polices, sur le web consiste à utiliser des mots-clés. Par exemple <span>xx-small</span>, <span>small</span>,
+          <span>medium</span>, <span>large</span> etc. <br>
+          Une autre facon de définir la taille est de spécifié des <span>px</span>.
+          <span class="codeLang">HTML</span>
+          <code>
+              <b class="bal">&lt;p <b class="att">class</b>="<b class="val">small</b>"&gt;</b><br>
+               This is a paragraph text set to be small. <br>
+              <b class="bal">&lt;/p&gt;</b> <br>
+              <b class="bal">&lt;p <b class="att">class</b>="<b class="val">medium</b>"&gt;</b><br>
+               This is a paragraph text set to be medium. <br>
+              <b class="bal">&lt;/p&gt;</b> <br>
+              <b class="bal">&lt;p <b class="att">class</b>="<b class="val">large</b>"&gt;</b><br>
+               This is a paragraph text set to be large. <br>
+              <b class="bal">&lt;/p&gt;</b> <br>
+              <b class="bal">&lt;p <b class="att">class</b>="<b class="val">x-large</b>"&gt;</b><br>
+               This is a paragraph text set to be very large. <br>
+              <b class="bal">&lt;/p&gt;</b> <br>
+              <b class="bal">&lt;p <b class="att">class</b>="<b class="val">pixel</b>"&gt;</b><br>
+               This is a paragraph text set to be very large. <br>
+              <b class="bal">&lt;/p&gt;</b>
+          </code> <br>
+          <span class="codeLang">CSS</span>
+          <code>
+            <b class="bal"> p.small </b> {<br> 
+            <b class="att" style="margin-left: 50px;">font-size</b>: <b class="val">small</b>; <br>
+            } <br>
+            <b class="bal"> p.medium </b> {<br> 
+            <b class="att" style="margin-left: 50px;">font-size</b>: <b class="val">medium</b>; <br>
+            } <br>
+            <b class="bal"> p.large </b> {<br> 
+            <b class="att" style="margin-left: 50px;">font-size</b>: <b class="val">large</b>; <br>
+            } <br>
+            <b class="bal"> p.x-large </b> {<br> 
+            <b class="att" style="margin-left: 50px;">font-size</b>: <b class="val">x-large</b>; <br>
+            } <br>
+            <b class="bal"> p.pixel </b> {<br> 
+            <b class="att" style="margin-left: 50px;">font-size</b>: <b class="val">20px</b>; <br>
+            }
+          </code><br>
+          <img src="" alt="" class="imgT">
+
+          <br><u>LE FONT-STYLE</u><br>
+          La propriété <span style="color: #008aca;">font-style</span> est principalement utilisé pour définit
+          les textes en <strong style="font-weight: bold;">Italic</strong> <br>
+          <span class="codeLang">HTML</span>
+          <code>
+              <b class="bal">&lt;p <b class="att">class</b>="<b class="val">italic</b>"&gt;</b><br>
+               This is a paragraph in italic style. <br>
+              <b class="bal">&lt;/p&gt;</b>
+          </code> <br>
+          <span class="codeLang">CSS</span>
+          <code>
+            <b class="bal"> p.italic </b> {<br> 
+            <b class="att" style="margin-left: 50px;">font-style</b>: <b class="val">italic</b>; <br>
+            }
+          </code> <br>
+          <img src="" alt="" class="imgT">
+
+          <br><u>LES COULEURS</u><br>
+          La propriété <span style="color: #008aca;">color</span> spécifie la couleur du text.
+          Une méthode pour utiliser les couleurs sont d'utiliser des valeus comme <strong style="font-weight: bold;">red</strong>,
+          <strong style="font-weight: bold;">vert</strong>, <strong style="font-weight: bold;">jaune</strong> ... <br>
+          Une autre manière est d'utiliser des valeurs <strong style="font-weight: bold;">hexadécimal</strong>. <br>
+          <span class="codeLang">HTML</span>
+          <code>
+              <b class="bal">&lt;h1&gt;</b>This is a heading.<b class="bal">&lt;/h1&gt;</b> <br>
+              <b class="bal">&lt;p <b class="att">class</b>="<b class="val">example</b>"&gt;</b>This is a paragraph.<b class="bal">&lt;/p&gt;</b>
+          </code> <br>
+          <span class="codeLang">CSS</span>
+          <code>
+            <b class="bal"> h1 </b> {<br> 
+            <b class="att" style="margin-left: 25px;">color</b>: <b class="val">#0000FF</b>; <br>
+            } <br>
+            <b class="bal"> p.example </b> {<br> 
+            <b class="att" style="margin-left: 25px;">color</b>: <b class="val">rgb("255,0,0")</b>; <br>
+            } 
+          </code><br>
+          <img src="" alt="" class="imgT">
+
+          <br><u>ALIGNEMENT HORIZONTAL</u><br>
+          La propriété <span style="color: #008aca;">text-align</span> spécifie l'alignement horizontal du text dans un élément.
+          Par défaut le texte sur une page web est aligné sur la gauche. <br>
+          <span class="codeLang">HTML</span>
+          <code>
+              <b class="bal">&lt;p <b class="att">class</b>="<b class="val">left</b>"&gt;</b><br>This paragraph is aligned to left. <br> <b class="bal">&lt;/p&gt;</b><br>
+              <b class="bal">&lt;p <b class="att">class</b>="<b class="val">right</b>"&gt;</b><br>This paragraph is aligned to right. <br> <b class="bal">&lt;/p&gt;</b><br>
+              <b class="bal">&lt;p <b class="att">class</b>="<b class="val">center</b>"&gt;</b><br>This paragraph is aligned to center. <br> <b class="bal">&lt;/p&gt;</b>
+          </code> <br>
+          <span class="codeLang">CSS</span>
+          <code>
+            <b class="bal"> p.left </b> {<br> 
+            <b class="att" style="margin-left: 25px;">text-align</b>: <b class="val">left</b>; <br>
+            } <br>
+            <b class="bal"> p.right </b> {<br> 
+            <b class="att" style="margin-left: 25px;">text-align</b>: <b class="val">right</b>; <br>
+            } <br>
+            <b class="bal"> p.center </b> {<br> 
+            <b class="att" style="margin-left: 25px;">text-align</b>: <b class="val">center</b>; <br>
+            } 
+          </code><br>
+          <img src="" alt="" class="imgT">
+
+          <br><u>ALIGNEMENT VERTICAL</u><br>
+          La propriété <span style="color: #008aca;">vertical-align</span> spécifie l'alignement vertical du text dans un élément.
+          Par défaut le texte sur une page web est aligné en haut. <br>
+          les valeurs de cet attribut sont usuellement <span>top</span>, <span>middle</span>, <span>bottom</span> <span>baseline</span>, 
+          <span>sup</span>, <span>super</span>... <a href="" style="color: #008aca;">En savoir plus</a> <br>
+
+        </p>
+      </div>
+    </article>
+  </section>
+
+  <section id="pictures">
+    <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">CSS BOX</h2>
+
+    <article class="my-3" id="typography">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>MODEL BOX</h3>
+        <a class="d-flex align-items-center" href="content/typography/">Documentation</a>
+      </div>
+      <div class="parag">
+        <p>
+          <b><u>LES BOX CSS</u></b><br>
+          Tous les éléments HTML peuvent etre considérés comme des boites. <br>
+          Le modèle de boite CSS représente la conception et la mise en page du site. Il se compose de
+          marges(margin), de bordures(border), de rembourrages et du contenu réel. <br>
+          <img src="images/box.png" alt="" class="imgT">
+
+          <img src="images/SVG/note.svg" alt="" class="imgNote">
+          <span class="spanNote">
+              Le terme <span>box model</span> est utilisé pour parler de conception et de mise en page.
+          </span><br>
+
+          Quand nous travaillons avec des box en css, il est important de comprendre comment la largeur totale d'un élément est calculée.
+          Par exemple, la largeur totale de la boite avec des pavages sera la somme de la largeur plus du remplissagede de gauche et du remplissage. <br>
+          <img src="images/box1.png" alt="" class="imgT"> 
+
+          Voici une autre box avec des marges, des bordures et des rembourrages. La largeur totale est 
+          la somme des marges gauche et droite, des bordures gauche et droite des rembourrages gauche et droit et de la largeur réelle du contenu.
+          <img src="images/box2.png" alt="" class="imgT">
+
+          <img src="images/SVG/note.svg" alt="" class="imgNote">
+          <span class="spanNote">
+              Lorsque vous définissez les propriétés de largeur et de hauteur d'un élément avec CSS,
+              vous définissez la largeur et la hauteur de la zone contenu.
+          </span><br>
+
+          <br><u>LES BORDURES</u><br>
+          La propriété CSS <span>border</span> vous permet de personnaliser les bordures des éléments dee votre page HTML <br>
+          Pour ajouter une bordure à un élément, vous devez spécifier la taille, le style et la couleur de la bordure. Les styles de
+          bordure les plus utilisés sont <span>solid</span>, <span>dotted</span>, <span>dashed</span>, <span>double</span>...
+          L'exemple ci-dessous montre comment ajouter une bordure verte avec un style <span>solid</span> au paragraphe. <br>
+          <span class="codeLang">HTML</span>
+          <code>
+              <b class="bal">&lt;p&gt;</b> This is an example of a solid border<b class="bal">&lt;/p&gt;</b>
+          </code> <br>
+          <span class="codeLang">CSS</span>
+          <code>
+            <b class="bal"> p </b> {<br> 
+            <b class="att" style="margin-left: 25px;">padding</b>: <b class="val">10px</b>; <br>
+            <b class="att" style="margin-left: 25px;">border</b>: <b class="val">5px solid green</b>;
+            } 
+          </code><br>
+          <img src="" alt="" class="imgT">
+
+
+          <br><u>CSS WIDTH AND HEIGHT</u><br>
+          Pour styliser un élément <span>div</span> afin qu'il ait une largeur et une hauteur totales de 100px.
+
+          <span class="codeLang">HTML</span>
+          <code>
+              <b class="bal">&lt;div&gt;</b> The total width and height of this element is 100px<b class="bal">&lt;/a&gt;</b>
+          </code> <br>
+          <span class="codeLang">CSS</span>
+          <code>
+            <b class="bal"> div </b> {<br> 
+            <b class="att" style="margin-left: 25px;">border</b>: <b class="val">5px solid green</b>; <br>
+            <b class="att" style="margin-left: 25px;">width</b>: <b class="val">90px</b>; <br>
+            <b class="att" style="margin-left: 25px;">height</b>: <b class="val">90px</b>;
+            } 
+          </code><br>
+          <img src="" alt="" class="imgT">
+
+          <br><u>BACKGROUND</u><br>
+          Les propriétés <span>background</span> sont utilisé en CSS pour définir l'arrière plan des éléments HTML.
+          Nous avons : <br> 
+          <span>background-color</span>: Pour définir l'arrière plan d'un élément en couleur. <br>
+          <span>background-image</span>: Pour définir l'arrière plan d'un élément en Image. <br>
+          <span>background-repeat</span>: Pour spécifier la facon dont l'image se répétera en arrière plan etc. <br>
+          Il existe plein d'autre propriétés <span>background</span>. <a href="" style="color: #008aca;">En savoir plus</a> <br>
+
+          <span class="codeLang">CSS</span>
+          <code>
+            <b class="bal"> p </b> {<br>
+            <b class="att" style="margin-left: 25px;">background-color</b>: <b class="val">blue</b>; <br>
+            } <br>
+            <b class="bal"> body </b> {<br>
+            <b class="att" style="margin-left: 25px;">background-image</b>: <b class="val">url("apCss.png")</b>; <br>
+            <b class="att" style="margin-left: 25px;">background-repeat</b>: <b class="val">repeat-x</b>;
+            }
+          </code><br>
+          Dans cet cour, nous n'avons parlé que des bases du CSS. Pour aller plus loin et en savoir plus, vous pouvez aller à la page <a href="" style="color: #008aca;">Apprendre le CSS</a>.
+          
+
+
+              
+      </p>
+      </div>
+    </article>
+  </section>
+</div>
+<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="script.js"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+</body></html>

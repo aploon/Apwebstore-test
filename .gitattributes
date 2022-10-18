@@ -1,0 +1,2 @@
+# Remove css files to langages
+*.css -linguist-vendored
